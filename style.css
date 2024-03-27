@@ -1,0 +1,349 @@
+:root {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    --main-color: #454545;
+    --secondary-color: #dc87a8;
+    --third-color: #000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+li {
+    text-transform: uppercase;
+    font-size: 1.75rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    gap: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+header {
+    background: var(--main-color);
+}
+
+#header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 12vh;
+    flex-wrap: wrap;
+}
+
+#title {
+    font-size: 2.5rem;
+    padding: 0.1em 0.5em;
+    border: 4px #000 double;
+    margin-left: 1em;
+    border-left: 4px var(--secondary-color) solid;
+}
+
+.sec-color {
+    color: var(--secondary-color);
+}
+
+.main-color {
+    color: var(--main-color);
+}
+
+/* nav home links UL, LI */
+.nav-ul {
+    margin-right: 2em;
+    background-image:
+        linear-gradient(179deg, #dc87a8 8% 2%, #454545 14% 43%);
+    border-radius: 10px;
+}
+
+.nav-ul li {
+    margin: 0.5em;
+    padding-left: 0.4em;
+}
+
+.nav-li:hover,
+.cat-li:hover {
+    transition: 1s;
+    cursor: pointer;
+}
+
+.nav-li:hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
+    border-left: 1px double var(--secondary-color);
+    margin-right: 1em;
+    margin-bottom: 0.2rem;
+}
+
+/* NAV LI shoes categories */
+#header-nav-cat {
+    position: relative;
+}
+
+.cat-ul {
+    background-color: var(--main-color);
+    padding: 2em 0 2em;
+    min-width: fit-content;
+    max-width: 30%;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.cat-li {
+    background: var(--third-color);
+    color: var(--main-color);
+    padding: 0.25em 0.5em;
+    border-radius: 10px;
+    margin-top: 0.5em;
+}
+
+.cat-li:hover {
+    transition: 0.2s;
+    color: var(--secondary-color);
+    background: var(--main-color);
+    outline: 2px solid var(--third-color);
+}
+
+/* search bar */
+#search {
+    position: absolute;
+    position: relative;
+    bottom: 5px;
+    left: 20px;
+}
+
+#search input {
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+textarea:focus,
+input:focus {
+    outline: 1px solid var(--secondary-color);
+}
+
+/* BUTTONS */
+.primary-btn {
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin: 0.5em 0 1em 0;
+    padding: 0.2em 0.5em;
+    background: var(--third-color);
+    color: var(--secondary-color);
+    border-radius: 5px;
+}
+
+header .secondary-btn {
+    display: inline-block;
+    position: absolute;
+    left: 220px;
+    bottom: 5px;
+    padding: 0.3em;
+    background-color: var(--third-color);
+    color: #fff;
+    border: unset;
+    border-radius: 5px;
+}
+
+.primary-btn:hover,
+.secondary-btn:hover {
+    cursor: pointer;
+    color: var(--main-color);
+}
+
+.primary-btn:hover {
+    background: #e0e0e0;
+    transition: 0.2s;
+}
+
+/* MAIN */
+#main {
+    padding: 5em 0 10em 0;
+    background: var(--secondary-color);
+}
+
+.main-text {
+    padding: 1em;
+    margin-bottom: 3em;
+    max-width: 60vw;
+}
+
+#main-title {
+    color: var(--third-color);
+    font-size: 4rem;
+}
+
+.description {
+    font-size: 1.5rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 2em;
+    letter-spacing: 1.5px;
+}
+
+.main-check-out {
+    margin: 0 auto;
+    width: 60vw;
+    border: 5px double var(--third-color);
+    text-align: center;
+}
+
+.main-check-out img {
+    padding: 0.2em;
+}
+
+/* section #1 shoes categories */
+#section-cat {
+    background: linear-gradient(to bottom, var(--secondary-color), var(--main-color));
+    text-align: center;
+    min-height: 80vh;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 1em;
+}
+
+.shoes-categories {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+
+.shoe-cat {
+    box-sizing: unset;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 20%;
+    padding: 1em;
+    margin: 1em auto;
+    color: #fff;
+    background: #4545456e;
+    border-radius: 20px;
+}
+
+.cat-title {
+    color: var(--third-color);
+    font-size: 2.5rem;
+    background: #4545453d;
+    min-width: 90%;
+    border-radius: 20px;
+    padding: .3em .2rem;
+}
+
+.cat-description {
+    margin: 0.5em 0 1em 0;
+    font-size: 1.5rem;
+}
+
+.cat-img {
+    max-width: 250px;
+}
+
+.cat-img img {
+    border-radius: 20px;
+    height: 200px;
+    max-width: 158px;
+}
+
+.shoe-cat:hover {
+    opacity: 0.8;
+    color: var(--third-color);
+    cursor: pointer;
+}
+
+/* newseller */
+
+#section-newseller {
+    background: var(--main-color);
+    padding: 10em 0;
+    min-height: 50vh;
+}
+
+.newseller {
+    border: 2px solid var(--secondary-color);
+    max-width: 50vw;
+    margin: 0 auto;
+    border-radius: 25px;
+}
+
+.newseller h2 {
+    font-size: 2.3rem;
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+
+.newseller .description {
+    margin: 0 auto 1.5em auto;
+    max-width: 60%;
+}
+
+#newseller-signup {
+    border-radius: 25px;
+    max-width: max-content;
+    margin: 0 auto;
+    padding: 0 2em;
+    border: 2px solid var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+#newseller-signup label {
+    display: block;
+    padding: 0.7rem 0 0.2rem 0;
+}
+
+.small {
+    display: block;
+    font-size: 0.75rem;
+    padding-bottom: 0.5em;
+}
+
+#section-newseller button {
+    display: block;
+    padding: 0.2em 0.5em;
+    font-size: 1.2rem;
+}
+
+/* footer */
+#footer {
+    display: flex;
+    justify-content: space-around;
+    background: var(--secondary-color);
+    background: linear-gradient(to bottom, var(--main-color), var(--secondary-color));
+    padding: 5em 0 2em 0;
+    font-size: 1.25rem;
+}
+
+#footer ul {
+    display: flow-root;
+}
+
+.footer-links li {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+}
+
+.footer-links a:hover {
+    color: var(--main-color);
+}
+
+.contact {
+    margin-top: 0.5rem;
+    color: var(--main-color);
+}
